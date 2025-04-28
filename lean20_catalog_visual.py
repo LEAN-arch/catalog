@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Título de la aplicación
-st.title("Catálogo Visual de Herramientas LEAN 2.0")
+st.title("Catálogo de Herramientas LEAN 2.0")
 
 # Descripción general
 st.markdown("""
