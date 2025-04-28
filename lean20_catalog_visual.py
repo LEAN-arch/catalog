@@ -16,7 +16,7 @@ tools = {
     "Mapeo de Causa-Humano": "Análisis Sistémico para Entornos Laborales Saludables.",
     "Andon Humano 4.0": "Sistema visual de alerta para dar voz y visibilidad a cada miembro del equipo.",
     "Poka-Yoke Humano": "Prevención Inteligente para el Bienestar y la Calidad Total.",    
-    "PDCA / PDSA Saludable": Mejorar con Ciencia y Humanidad.", 
+    "PDCA / PDSA Saludable": "Mejorar con Ciencia y Humanidad.", 
     "Hoshin Kanri Humano": "Alineación Estratégica con Propósito Humano." 
     "5S+2 Centrado en las Personas": "Un enfoque que organiza el lugar de trabajo para optimizar la productividad y el bienestar.",
     "Gemba con Propósito": "Visita el lugar donde se realiza el trabajo para identificar oportunidades de mejora.",
