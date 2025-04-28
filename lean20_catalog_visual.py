@@ -23,8 +23,8 @@ tools = {
     "Ethical FMEA": "Gestión de Riesgos con Enfoque Humano.",
     "VSM de Equilibrio Laboral": "Mapeo de flujo de valor centrado en el equilibrio entre la eficiencia operativa y el bienestar humano.",
     "Takt Time Laboral": "Medición del tiempo requerido para cumplir con la demanda sin sobrecargar a los empleados.",
-    "Jidoka Ético": "Autonomización de procesos con enfoque en la seguridad y ética del trabajo."
-    "Heijunka Humano": "Balancear el Trabajo y la Vida."
+    "Jidoka Ético": "Autonomización de procesos con enfoque en la seguridad y ética del trabajo.",
+    "Heijunka Humano": "Balancear el Trabajo y la Vida.",
     "Takt Time Laboral": "Medición del tiempo requerido para cumplir con la demanda sin sobrecargar a los empleados.",
   
    
