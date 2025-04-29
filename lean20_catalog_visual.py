@@ -366,23 +366,12 @@ tools = { "Kaizen Colectivo": """
 # Colores para las tarjetas
 colors = ["#f9f9f9", "#e0f7fa", "#fce4ec"]
 
-# Función para convertir **texto** a <b>texto</b>
-def markdown_to_html(text):
-    # Reemplaza **texto** con <b>texto</b>
-    text = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', text)
-    # Reemplaza saltos de línea por <br>
-    text = text.replace('\n', '<br>')
-    return text
-
 # Selector de herramienta
 selected_tool = st.selectbox("Selecciona una herramienta:", list(tools.keys()))
 
 # Mostrar la herramienta seleccionada en una "tarjeta"
 index = list(tools.keys()).index(selected_tool)
 color = colors[index % len(colors)]
-
-# Convertir markdown a HTML
-tool_content_html = markdown_to_html(tools[selected_tool])
 
 # Mostrar contenido con estilo tarjeta
 st.markdown(
@@ -396,7 +385,7 @@ st.markdown(
     ">
         <h3 style="color: #333;">{selected_tool}</h3>
         <div style="color: #555; font-size: 1rem;">
-            {tool_content_html}
+            {tools[selected_tool].replace('\n', '<br>')}
         </div>
     </div>
     """,
