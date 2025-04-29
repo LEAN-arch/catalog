@@ -25,12 +25,11 @@ tools = {
     "Takt Time Laboral": "Medición del tiempo requerido para cumplir con la demanda sin sobrecargar a los empleados.",
     "Jidoka Ético": "Autonomización de procesos con enfoque en la seguridad y ética del trabajo.",
     "Heijunka Humano": "Balancear el Trabajo y la Vida.",
-    "Takt Time Laboral": "Medición del tiempo requerido para cumplir con la demanda sin sobrecargar a los empleados.",
-  
+
    
 }
 # Detalles extendidos para cada herramienta
-extended_info = { "Kaizen Colectivo":
+extended_info = { "Kaizen Colectivo": """
     **¿Qué es?**  
     Kaizen Colectivo es una práctica que involucra a todos los miembros de una organización en el proceso de mejora continua. 
     Todos trabajan juntos para identificar áreas de mejora y proponer soluciones.
@@ -58,7 +57,7 @@ extended_info = { "Kaizen Colectivo":
     - Aprovecha la experiencia colectiva para impulsar mejoras reales y sostenibles.
     """),
 
- "Gemba con Propósito":
+ "Gemba con Propósito": """
     st.markdown("""
     **¿Qué es?**  
     Gemba con Propósito implica que los líderes y empleados vayan al lugar de trabajo (el "gemba") para observar directamente los procesos y comprender mejor los problemas.
@@ -85,7 +84,7 @@ extended_info = { "Kaizen Colectivo":
     - Facilita una comprensión directa de los problemas y permite soluciones más efectivas y rápidas.
     """),
 
- "Kanban Ético":
+ "Kanban Ético": """
     **¿Qué es?**  
     Sistema visual de gestión de tareas, que balancea la carga de trabajo para reducir estrés y aumentar el bienestar.
 
@@ -111,7 +110,7 @@ extended_info = { "Kaizen Colectivo":
     - Facilita una comprensión directa de los problemas y permite soluciones más efectivas y rápidas.
     """),
 
- "Mapeo de Causa-Humano":
+ "Mapeo de Causa-Humano": """
     **¿Qué es?**  
     Herramienta para analizar problemas sistémicos considerando factores humanos y organizacionales.
 
@@ -135,7 +134,7 @@ extended_info = { "Kaizen Colectivo":
     **¿Por qué Funciona?**
     - El enfoque sistémico minimiza errores y promueve un ambiente de mejora continua sin culpabilidad.
     """),
- "Andon Humano 4.0":
+ "Andon Humano 4.0": """
     **¿Qué es?**  
     Sistema visual de alertas donde cualquier colaborador puede señalar problemas en tiempo real.
 
@@ -162,7 +161,7 @@ extended_info = { "Kaizen Colectivo":
     - Promueve intervención temprana, evitando escaladas de problemas operativos y humanos.
     """),
 
- "Poka-Yoke Humano":
+ "Poka-Yoke Humano": """
     **¿Qué es?**  
     Método para prevenir errores humanos antes de que ocurran mediante mejoras simples en procesos.
 
@@ -187,7 +186,7 @@ extended_info = { "Kaizen Colectivo":
     - Elimina la posibilidad de fallas antes de que afecten al sistema o al colaborador.
     """),
 
-"PDCA / PDSA Saludable":
+"PDCA / PDSA Saludable": """
     **¿Qué es?**  
     Ciclo sistemático para planificar, ejecutar, verificar y actuar sobre mejoras continuas, enfocado en procesos humanos.
 
@@ -213,7 +212,7 @@ extended_info = { "Kaizen Colectivo":
     - Fomenta experimentación segura y aprendizaje colectivo.
     """),
 
-"Hoshin Kanri Humano":
+"Hoshin Kanri Humano": """
     **¿Qué es?**  
     Sistema de despliegue estratégico enfocado en el alineamiento entre los objetivos de la organización y las necesidades humanas.
 
@@ -239,7 +238,7 @@ extended_info = { "Kaizen Colectivo":
     - Genera propósito compartido y compromiso genuino.
     """),
 
-"5S+2 Centrado en las Personas":
+"5S+2 Centrado en las Personas": """
     **¿Qué es?**  
     Expansión del método 5S tradicional, incluyendo componentes de bienestar y humanización del espacio de trabajo.
 
@@ -263,7 +262,7 @@ extended_info = { "Kaizen Colectivo":
     **¿Por qué Funciona?**
     - Genera orden externo e interno, impactando positivamente en el estado mental.
     """),
-"Ethical FMEA":
+"Ethical FMEA": """
     **¿Qué es?**  
     Análisis de modos y efectos de falla aplicado con un enfoque humano, priorizando riesgos psicosociales y operativos.
 
@@ -288,7 +287,7 @@ extended_info = { "Kaizen Colectivo":
     - Integra la dimensión humana en la prevención de errores críticos.
     """),
 
-"VSM de Equilibrio Laboral":
+"VSM de Equilibrio Laboral": """
     **¿Qué es?**  
     Mapeo del flujo de valor que prioriza tanto la eficiencia operativa como el bienestar humano.
 
@@ -313,7 +312,7 @@ extended_info = { "Kaizen Colectivo":
     - El enfoque dual (operativo y humano) garantiza flujos sostenibles.
     """),
 
-"Takt Time Laboral":
+"Takt Time Laboral": """
     **¿Qué es?**  
     Medición del ritmo de trabajo ideal para satisfacer la demanda sin sobrecargar a los colaboradores.
 
@@ -338,7 +337,7 @@ extended_info = { "Kaizen Colectivo":
     - Sincroniza productividad con bienestar humano de forma estructurada.
     """),
 
-"Jidoka Ético":
+"Jidoka Ético": """
     **¿Qué es?**  
     Sistema de autonomización que integra criterios éticos de protección al trabajador en la detección y corrección de errores.
 
@@ -363,7 +362,7 @@ extended_info = { "Kaizen Colectivo":
     - Combina calidad técnica con respeto por la dignidad laboral.
     """),
 
-"Heijunka Humano":
+"Heijunka Humano": """
     **¿Qué es?**  
     Herramienta para nivelar la carga de trabajo evitando picos de esfuerzo perjudiciales para la salud.
 
