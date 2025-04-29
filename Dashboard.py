@@ -47,20 +47,21 @@ for package in REQUIRED_PACKAGES:
     except ImportError:
         missing_packages.append(package)
 
+# Handle missing packages without using Streamlit
 if missing_packages:
-    st.warning(f"Installing missing packages: {', '.join(missing_packages)}...")
+    print(f"Installing missing packages: {', '.join(missing_packages)}...")
     for package in missing_packages:
         if not install_package(package):
-            st.error(f"Failed to install {package}. Please install manually with: pip install {package}")
+            print(f"Failed to install {package}. Please install manually with: pip install {package}")
             if package == 'pdfkit':
-                st.info("For pdfkit, you may also need to install wkhtmltopdf. See: https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf")
+                print("For pdfkit, you may also need to install wkhtmltopdf. See: https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf")
             sys.exit(1)
     
     # Refresh imports after installation
     for package in missing_packages:
         globals()[package] = __import__(package)
 
-# Now safely import all packages
+# Now safely import all packages including Streamlit
 import streamlit as st
 import pandas as pd
 import plotly.express as px
