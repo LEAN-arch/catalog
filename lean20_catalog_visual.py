@@ -51,6 +51,7 @@ def format_bold(text):
 # Definimos las herramientas como texto plano (sin st.markdown adentro)
 # --- Tools ---
 tools = { "Kaizen Colectivo": """
+    "icon": "🚀",
     **¿Qué es?**  
     Kaizen Colectivo es una práctica que involucra a todos los miembros de una organización en el proceso de mejora continua. 
     Todos trabajan juntos para identificar áreas de mejora y proponer soluciones.
@@ -79,6 +80,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
    "Gemba con Propósito": """
+    "icon": "🚀",
     **¿Qué es?**  
     Gemba con Propósito implica que los líderes y empleados vayan al lugar de trabajo (el "gemba") para observar directamente los procesos y comprender mejor los problemas.
 
@@ -105,6 +107,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
  "Kanban Ético": """
+    "icon": "🚀",
     **¿Qué es?**  
     Sistema visual de gestión de tareas, que balancea la carga de trabajo para reducir estrés y aumentar el bienestar.
 
@@ -131,6 +134,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
  "Mapeo de Causa-Humano": """
+    "icon": "🚀",
     **¿Qué es?**  
     Herramienta para analizar problemas sistémicos considerando factores humanos y organizacionales.
 
@@ -155,6 +159,7 @@ tools = { "Kaizen Colectivo": """
     - El enfoque sistémico minimiza errores y promueve un ambiente de mejora continua sin culpabilidad.
     """,
  "Andon Humano 4.0": """
+    "icon": "🚀",
     **¿Qué es?**  
     Sistema visual de alertas donde cualquier colaborador puede señalar problemas en tiempo real.
 
@@ -182,6 +187,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
  "Poka-Yoke Humano": """
+    "icon": "🚀",
     **¿Qué es?**  
     Método para prevenir errores humanos antes de que ocurran mediante mejoras simples en procesos.
 
@@ -207,6 +213,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "PDCA / PDSA Saludable": """
+    "icon": "🚀",
     **¿Qué es?**  
     Ciclo sistemático para planificar, ejecutar, verificar y actuar sobre mejoras continuas, enfocado en procesos humanos.
 
@@ -233,6 +240,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "Hoshin Kanri Humano": """
+    "icon": "🚀",
     **¿Qué es?**  
     Sistema de despliegue estratégico enfocado en el alineamiento entre los objetivos de la organización y las necesidades humanas.
 
@@ -259,6 +267,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "5S+2 Centrado en las Personas": """
+    "icon": "🚀",
     **¿Qué es?**  
     Expansión del método 5S tradicional, incluyendo componentes de bienestar y humanización del espacio de trabajo.
 
@@ -283,6 +292,7 @@ tools = { "Kaizen Colectivo": """
     - Genera orden externo e interno, impactando positivamente en el estado mental.
     """,
 "Ethical FMEA": """
+    "icon": "🚀",
     **¿Qué es?**  
     Análisis de modos y efectos de falla aplicado con un enfoque humano, priorizando riesgos psicosociales y operativos.
 
@@ -308,6 +318,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "VSM de Equilibrio Laboral": """
+    "icon": "🚀",
     **¿Qué es?**  
     Mapeo del flujo de valor que prioriza tanto la eficiencia operativa como el bienestar humano.
 
@@ -333,6 +344,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "Takt Time Laboral": """
+    "icon": "🚀",
     **¿Qué es?**  
     Medición del ritmo de trabajo ideal para satisfacer la demanda sin sobrecargar a los colaboradores.
 
@@ -358,6 +370,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "Jidoka Ético": """
+    "icon": "🚀",
     **¿Qué es?**  
     Sistema de autonomización que integra criterios éticos de protección al trabajador en la detección y corrección de errores.
 
@@ -383,6 +396,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "Heijunka Humano": """
+    "icon": "🚀",
     **¿Qué es?**  
     Herramienta para nivelar la carga de trabajo evitando picos de esfuerzo perjudiciales para la salud.
 
@@ -408,6 +422,7 @@ tools = { "Kaizen Colectivo": """
     """,
 
 "Standard of Work Humano": """
+    "icon": "🚀",
     **¿Qué es?**
     - Define la mejor forma de trabajar priorizando la dignidad, la salud mental y el bienestar, no solo la eficiencia.
 
