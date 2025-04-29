@@ -404,41 +404,40 @@ tools = { "Kaizen Colectivo": """
     """,      
 }
 
-# Colores para las tarjetas
-colors = ["#f9f9f9", "#e0f7fa", "#fce4ec", "#fff3e0", "#e8f5e9"]
+# --- Color palette for cards ---
+colors = ["#F0F4F8", "#E0F7FA", "#FFF3E0", "#FCE4EC", "#E8F5E9"]
 
-# Configuración de columnas (por ejemplo, 4 columnas)
+# --- Layout configuration ---
 cols_per_row = 3
 columns = st.columns(cols_per_row)
 
-# Mostrar herramientas en forma de grid
+# --- Render cards dynamically ---
 for idx, (tool_name, tool_description) in enumerate(tools.items()):
     col = columns[idx % cols_per_row]
     with col:
         st.markdown(
             f"""
             <div style="
-                background-color: {colors[idx % len(colors)]};
-                padding: 1rem;
-                border-radius: 0.75rem;
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-                margin-bottom: 1rem;
+                background: linear-gradient(135deg, {colors[idx % len(colors)]} 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 1rem;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                margin-bottom: 1.5rem;
                 text-align: center;
-            ">
-                <h4 style="margin: 0; color: #333;">{tool_name}</h4>
+                transition: transform 0.2s;
+            " onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';">
+                <h3 style="color: #222; margin-bottom: 0.5rem;">{tool_name}</h3>
             </div>
             """,
             unsafe_allow_html=True
         )
-        with st.expander("Ver detalles"):
+        with st.expander("🔍 Ver detalles", expanded=False):
             st.markdown(
                 f"""
-                <div style="color: #555; font-size: 1rem;">
+                <div style="color: #444; font-size: 1rem; line-height: 1.6;">
                     {format_bold(tool_description)}
                 </div>
                 """,
                 unsafe_allow_html=True
             )
-
-
 
