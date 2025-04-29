@@ -366,6 +366,42 @@ tools = { "Kaizen Colectivo": """
     **¿Por qué Funciona?**
     - Nivelar protege la energía y salud mental de los trabajadores.
     """,
+
+"Standard of Work Humano": """
+**¿Qué es?**
+- El Standard of Work Humano define la mejor forma de trabajar priorizando la dignidad, la salud mental y el bienestar, no solo la eficiencia.
+
+**Beneficios Clave:**
+Consistencia en calidad sin desgaste humano.
+
+**Reducción de errores, fatiga y estrés.**
+Fortalecimiento de la cultura de respeto y mejora continua.
+
+**Aporte a NOM-035:**
+- Previene riesgos psicosociales.
+- Evita cargas de trabajo excesivas.
+- Fomenta un ambiente organizacional saludable.
+
+**Cómo Implementarlo:**
+- Documentar buenas prácticas considerando ergonomía y carga emocional.
+- Integrar retroalimentación de los trabajadores.
+- Capacitar en estándares enfocados en calidad y bienestar.
+- Auditar y ajustar de manera continua.
+
+**Indicadores de Éxito:
+- Cumplimiento del estándar.
+- Reducción de estrés y fatiga.
+- Mejora en satisfacción laboral y calidad del trabajo.
+
+**Métricas o KPIs Específicos:**
+- % de actividades estandarizadas con enfoque humano.
+- Cumplimiento de pausas activas.
+- Reducción de ausentismo por estrés.
+- Índice de carga laboral percibida.
+
+**¿Por qué Funciona?**
+Porque trabajadores saludables y respetados son más productivos, comprometidos y generan mejores resultados sostenibles.
+         
 }
 
 # Colores para las tarjetas
