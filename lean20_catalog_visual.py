@@ -1,11 +1,20 @@
 import streamlit as st
 import re
 
+
 # --- Page config ---
 st.set_page_config(page_title="Catálogo Lean 2.0", layout="wide")
+# --- Global styles ---
 st.markdown(
     """
     <style>
+    .page-title {
+        text-align: center;
+        font-size: 4rem; /* Más grande */
+        font-weight: 900; /* Súper bold */
+        color: #0d47a1; /* Azul profesional */
+        margin-bottom: 2.5rem; /* Margen bajo */
+    }
     .card {
         background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
         border-radius: 1.25rem;
