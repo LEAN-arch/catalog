@@ -1,34 +1,11 @@
 import streamlit as st
 
-# Título de la aplicación
-st.title("Catálogo de Herramientas LEAN 2.0")
+st.set_page_config(page_title="Catálogo Lean 2.0", layout="wide")
 
-# Descripción general
-st.markdown("""
-Este catálogo interactivo te permite explorar las principales herramientas **LEAN 2.0**. 
-Cada herramienta aparece como una tarjeta con su información.
-""")
+st.title("🚀 Catálogo de Herramientas Lean 2.0")
 
-# Lista de herramientas LEAN 2.0 con descripciones
-tools = {
-    "Kaizen Colectivo": "Una herramienta que promueve la mejora continua mediante la colaboración colectiva.",
-    "Kanban Ético": "Sistema visual de control de flujo de trabajo con énfasis en el bienestar de los empleados y eficiencia laboral.",
-    "Mapeo de Causa-Humano": "Análisis Sistémico para Entornos Laborales Saludables.",
-    "Andon Humano 4.0": "Sistema visual de alerta para dar voz y visibilidad a cada miembro del equipo.",
-    "Poka-Yoke Humano": "Prevención Inteligente para el Bienestar y la Calidad Total.",
-    "PDCA / PDSA Saludable": "Mejorar con Ciencia y Humanidad.",
-    "Hoshin Kanri Humano": "Alineación Estratégica con Propósito Humano.",
-    "5S+2 Centrado en las Personas": "Un enfoque que organiza el lugar de trabajo para optimizar la productividad y el bienestar.",
-    "Gemba con Propósito": "Visita el lugar donde se realiza el trabajo para identificar oportunidades de mejora.",
-    "Ethical FMEA": "Gestión de Riesgos con Enfoque Humano.",
-    "VSM de Equilibrio Laboral": "Mapeo de flujo de valor centrado en el equilibrio entre la eficiencia operativa y el bienestar humano.",
-    "Takt Time Laboral": "Medición del tiempo requerido para cumplir con la demanda sin sobrecargar a los empleados.",
-    "Jidoka Ético": "Autonomización de procesos con enfoque en la seguridad y ética del trabajo.",
-    "Heijunka Humano": "Balancear el Trabajo y la Vida."
-}
-
-# Detalles extendidos para cada herramienta
-extended_info = { "Kaizen Colectivo": """
+# Definimos las herramientas como texto plano (sin st.markdown adentro)
+tools = { "Kaizen Colectivo": """
     **¿Qué es?**  
     Kaizen Colectivo es una práctica que involucra a todos los miembros de una organización en el proceso de mejora continua. 
     Todos trabajan juntos para identificar áreas de mejora y proponer soluciones.
@@ -387,14 +364,35 @@ extended_info = { "Kaizen Colectivo": """
     """,
 }
 
-# Mostrar tarjetas para cada herramienta
-for tool, description in tools.items():
-    with st.container():
-        st.markdown(f"### {tool}")
-        st.markdown(f"> {description}")
-        if tool in extended_info:
-            st.markdown(extended_info[tool])
-        st.markdown("---")
+# Colores para las tarjetas
+colors = ["#f9f9f9", "#e0f7fa", "#fce4ec"]
+
+# Selector de herramienta
+selected_tool = st.selectbox("Selecciona una herramienta:", list(tools.keys()))
+
+# Mostrar la herramienta seleccionada en una "tarjeta"
+index = list(tools.keys()).index(selected_tool)
+color = colors[index % len(colors)]  # Rota colores si hay más herramientas
+
+# Mostrar contenido con estilo tarjeta
+st.markdown(
+    f"""
+    <div style="
+        background-color: {color};
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 1rem;
+    ">
+        <h3 style="color: #333;">{selected_tool}</h3>
+        <div style="color: #555; font-size: 1rem;">
+            {tools[selected_tool].replace('\n', '<br>')}
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 
 
