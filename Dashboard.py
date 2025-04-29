@@ -1,38 +1,26 @@
 import sys
 import warnings
-from importlib import import_module
+from importlib.util import find_spec
 
-# Suppress warnings
+# Disable warnings to avoid clutter
 warnings.filterwarnings("ignore")
 
-def is_package_installed(package):
-    try:
-        import_module(package)
-        return True
-    except ImportError:
-        return False
+def is_installed(package_name):
+    """Check if package is installed without importing it"""
+    return find_spec(package_name) is not None
 
-def install_package(package, max_attempts=2):
-    """Install package with retries and verification"""
+def install_package(package_name):
+    """Install package with proper error handling"""
     import subprocess
-    attempts = 0
-    
-    while attempts < max_attempts:
-        try:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-            if is_package_installed(package):
-                return True
-        except:
-            attempts += 1
-    
-    # Try user install if global fails
     try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "--user", package])
-        return is_package_installed(package)
-    except:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package_name], 
+                            stdout=subprocess.DEVNULL,
+                            stderr=subprocess.DEVNULL)
+        return True
+    except subprocess.CalledProcessError:
         return False
 
-# Required packages in installation order
+# List of required packages
 REQUIRED_PACKAGES = [
     'streamlit',
     'pandas',
@@ -40,36 +28,43 @@ REQUIRED_PACKAGES = [
     'pdfkit'
 ]
 
-# Check and install missing packages
-missing_packages = [pkg for pkg in REQUIRED_PACKAGES if not is_package_installed(pkg)]
+# Check for missing packages
+missing_packages = [pkg for pkg in REQUIRED_PACKAGES if not is_installed(pkg)]
 
+# Install missing packages (only once)
 if missing_packages:
-    print(f"Missing packages detected: {', '.join(missing_packages)}")
+    print(f"Missing packages: {', '.join(missing_packages)}")
     print("Attempting installation...")
     
+    failed_installations = []
     for package in missing_packages:
-        success = install_package(package)
-        if not success:
-            print(f"❌ Failed to install {package} after multiple attempts")
-            print(f"Please install manually with: pip install {package}")
-            if package == 'pdfkit':
-                print("Note: pdfkit requires wkhtmltopdf - see installation guide:")
-                print("https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf")
-            sys.exit(1)
+        if not install_package(package):
+            failed_installations.append(package)
     
-    print("✅ All packages installed successfully")
+    if failed_installations:
+        print("\nERROR: Failed to install these packages automatically:")
+        for pkg in failed_installations:
+            print(f"- {pkg} (try: pip install {pkg})")
+            if pkg == 'pdfkit':
+                print("  Note: pdfkit requires wkhtmltopdf - install separately")
+        sys.exit(1)
 
-# Now safely import everything
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-from io import BytesIO
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import pdfkit
-from datetime import datetime
+# Now safely import all packages
+try:
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+    import plotly.graph_objects as go
+    from io import BytesIO
+    import smtplib
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
+    import pdfkit
+    from datetime import datetime
+except ImportError as e:
+    print(f"Critical import error: {str(e)}")
+    print("Please check your Python environment and dependencies")
+    sys.exit(1)
 # ================
 # PAGE CONFIGURATION
 # ================
