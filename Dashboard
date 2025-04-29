@@ -1,0 +1,106 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+from io import BytesIO
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
+import pdfkit
+
+# Configuración de la página
+st.set_page_config(page_title="Dashboard Corporativo: Cumplimiento NOM-035 y Evolución LEAN 2.0", layout="wide")
+
+# Header con logo de la empresa
+st.image("logo_empresa.png", width=200)
+st.title("🏛️ Dashboard Corporativo: Cumplimiento NOM-035 y Evolución LEAN 2.0")
+st.subheader("Monitoreo Estratégico de Bienestar, Cultura y Mejora Continua")
+st.caption("Última actualización: Abril 2025")
+st.markdown("---")
+
+# Datos de ejemplo
+evaluaciones = pd.DataFrame({
+    'Departamento': ['Producción', 'Calidad', 'Logística', 'Administración', 'Ventas'],
+    'Evaluaciones Aplicadas (%)': [95, 90, 85, 80, 75]
+})
+
+# Filtros dinámicos
+st.sidebar.header("🔎 Filtros Dinámicos")
+departamentos = st.sidebar.multiselect("Selecciona Departamentos:", evaluaciones['Departamento'].unique(), default=evaluaciones['Departamento'].unique())
+
+# Aplicar Filtros
+evaluaciones_filtrado = evaluaciones[evaluaciones['Departamento'].isin(departamentos)]
+
+# KPIs principales con semáforo
+st.header("📊 KPIs Estratégicos")
+col1, col2, col3 = st.columns(3)
+
+def semaforo(kpi_value):
+    if kpi_value > 90:
+        return "🟢"
+    elif 70 <= kpi_value <= 89:
+        return "🟡"
+    else:
+        return "🔴"
+
+with col1:
+    kpi_1 = 92  # Ejemplo KPI
+    st.metric("Cumplimiento NOM-035", f"{kpi_1}% {semaforo(kpi_1)}")
+
+# Visualización gráfica
+fig1 = px.bar(evaluaciones_filtrado, x='Evaluaciones Aplicadas (%)', y='Departamento', orientation='h', color='Departamento')
+st.plotly_chart(fig1, use_container_width=True)
+
+# Enviar Alertas de Correo
+def enviar_alerta(kpi_value, destinatarios):
+    if kpi_value < 90:
+        sender_email = "tu_email@empresa.com"
+        receiver_email = destinatarios
+        password = "tu_contraseña"
+        
+        # Crear mensaje
+        message = MIMEMultipart()
+        message['From'] = sender_email
+        message['To'] = receiver_email
+        message['Subject'] = "ALERTA: KPI Crítico en Cumplimiento NOM-035"
+        
+        body = f"El KPI de Cumplimiento NOM-035 ha caído por debajo del 90%. Valor actual: {kpi_value}%."
+        message.attach(MIMEText(body, 'plain'))
+        
+        # Enviar correo
+        try:
+            server = smtplib.SMTP('smtp.empresa.com', 587)
+            server.starttls()
+            server.login(sender_email, password)
+            text = message.as_string()
+            server.sendmail(sender_email, receiver_email, text)
+            server.quit()
+            print("Correo enviado con éxito.")
+        except Exception as e:
+            print(f"Error al enviar el correo: {e}")
+
+# PDF Generación
+def generar_pdf():
+    html_content = f"""
+    <h1>Reporte de KPIs - LEAN 2.0 y NOM-035</h1>
+    <h3>Cumplimiento NOM-035: {kpi_1}% {semaforo(kpi_1)}</h3>
+    <h4>Evaluaciones Aplicadas por Departamento:</h4>
+    <ul>
+    <li>Producción: 95%</li>
+    <li>Calidad: 90%</li>
+    <li>Logística: 85%</li>
+    </ul>
+    """
+    pdf = pdfkit.from_string(html_content, False)
+    return pdf
+
+# Descargar PDF
+st.download_button("📄 Descargar Reporte PDF Ejecutivo", data=generar_pdf(), file_name="reporte_kpi.pdf", mime="application/pdf")
+
+# Footer
+st.markdown("""
+---
+🔹 **Interpretación de Colores**  
+- 🟢 Verde: Cumplimiento >90%  
+- 🟡 Amarillo: Cumplimiento 70%-89%  
+- 🔴 Rojo: Cumplimiento <70%
+""")
