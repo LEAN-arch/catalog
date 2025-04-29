@@ -3,7 +3,7 @@ import re
 
 
 # --- Page config ---
-st.set_page_config(page_title="Catálogo Lean 2.0", layout="wide")
+st.set_page_config(page_title="Catálogo de Herramientas Lean 2.0", layout="wide")
 # --- Global styles ---
 st.markdown(
     """
