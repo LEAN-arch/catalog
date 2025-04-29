@@ -400,8 +400,8 @@ tools = { "Kaizen Colectivo": """
   - Índice de carga laboral percibida.
 
   **¿Por qué Funciona?**
-  - Porque trabajadores saludables y respetados son más productivos, comprometidos y generan mejores resultados sostenibles.,
-         
+  - Porque trabajadores saludables y respetados son más productivos, comprometidos y generan mejores resultados sostenibles.
+    """,      
 }
 
 # Colores para las tarjetas
