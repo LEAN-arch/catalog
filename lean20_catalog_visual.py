@@ -1,8 +1,13 @@
 import streamlit as st
-
+import re
 st.set_page_config(page_title="Catálogo Lean 2.0", layout="wide")
 
 st.title("🚀 Catálogo de Herramientas Lean 2.0")
+# Función para convertir **texto** a <b>texto</b>
+def format_bold(text):
+    text = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', text)
+    text = text.replace('\n', '<br>')
+    return text
 
 # Definimos las herramientas como texto plano (sin st.markdown adentro)
 tools = { "Kaizen Colectivo": """
@@ -385,7 +390,7 @@ st.markdown(
     ">
         <h3 style="color: #333;">{selected_tool}</h3>
         <div style="color: #555; font-size: 1rem;">
-            {tools[selected_tool].replace('\n', '<br>')}
+            {format_bold(tools[selected_tool])}
         </div>
     </div>
     """,
