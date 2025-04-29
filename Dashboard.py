@@ -1,13 +1,44 @@
-try:
-    import plotly.express as px
-except ImportError:
-    import subprocess
-    import sys
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
-    import plotly.express as px
+import sys
+import platform
 
+# Check and install missing packages with better error handling
+required_packages = {
+    'streamlit': 'st',
+    'pandas': 'pd',
+    'plotly': 'px',
+    'plotly.graph_objects': 'go',
+    'pdfkit': 'pdfkit'
+}
+
+missing_packages = []
+for package, alias in required_packages.items():
+    try:
+        globals()[alias] = __import__(package)
+    except ImportError:
+        missing_packages.append(package)
+
+if missing_packages:
+    import pip._internal as pip
+    try:
+        for package in missing_packages:
+            try:
+                pip.main(['install', package])
+            except:
+                # Fallback to subprocess if pip._internal fails
+                import subprocess
+                subprocess.run([sys.executable, '-m', 'pip', 'install', package], check=True)
+        
+        # Reload modules after installation
+        for package, alias in required_packages.items():
+            if package in missing_packages:
+                globals()[alias] = __import__(package)
+    except Exception as e:
+        raise ImportError(f"Failed to install required packages: {missing_packages}\nError: {str(e)}")
+
+# Now proceed with your imports
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 import plotly.graph_objects as go
 from io import BytesIO
 import smtplib
