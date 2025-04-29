@@ -6,28 +6,27 @@ st.title("Catálogo de Herramientas LEAN 2.0")
 # Descripción general
 st.markdown("""
 Este catálogo interactivo te permite explorar las principales herramientas **LEAN 2.0**. 
-Haz clic en cada herramienta para conocer su descripción, beneficios y cómo implementarla.
+Cada herramienta aparece como una tarjeta con su información.
 """)
 
-# Lista de herramientas LEAN 2.0
+# Lista de herramientas LEAN 2.0 con descripciones
 tools = {
     "Kaizen Colectivo": "Una herramienta que promueve la mejora continua mediante la colaboración colectiva.",
     "Kanban Ético": "Sistema visual de control de flujo de trabajo con énfasis en el bienestar de los empleados y eficiencia laboral.",
     "Mapeo de Causa-Humano": "Análisis Sistémico para Entornos Laborales Saludables.",
     "Andon Humano 4.0": "Sistema visual de alerta para dar voz y visibilidad a cada miembro del equipo.",
-    "Poka-Yoke Humano": "Prevención Inteligente para el Bienestar y la Calidad Total.",    
-    "PDCA / PDSA Saludable": "Mejorar con Ciencia y Humanidad.", 
-    "Hoshin Kanri Humano": "Alineación Estratégica con Propósito Humano.", 
+    "Poka-Yoke Humano": "Prevención Inteligente para el Bienestar y la Calidad Total.",
+    "PDCA / PDSA Saludable": "Mejorar con Ciencia y Humanidad.",
+    "Hoshin Kanri Humano": "Alineación Estratégica con Propósito Humano.",
     "5S+2 Centrado en las Personas": "Un enfoque que organiza el lugar de trabajo para optimizar la productividad y el bienestar.",
     "Gemba con Propósito": "Visita el lugar donde se realiza el trabajo para identificar oportunidades de mejora.",
     "Ethical FMEA": "Gestión de Riesgos con Enfoque Humano.",
     "VSM de Equilibrio Laboral": "Mapeo de flujo de valor centrado en el equilibrio entre la eficiencia operativa y el bienestar humano.",
     "Takt Time Laboral": "Medición del tiempo requerido para cumplir con la demanda sin sobrecargar a los empleados.",
     "Jidoka Ético": "Autonomización de procesos con enfoque en la seguridad y ética del trabajo.",
-    "Heijunka Humano": "Balancear el Trabajo y la Vida.",
-
-   
+    "Heijunka Humano": "Balancear el Trabajo y la Vida."
 }
+
 # Detalles extendidos para cada herramienta
 extended_info = { "Kaizen Colectivo": """
     **¿Qué es?**  
