@@ -29,16 +29,8 @@ tools = {
   
    
 }
-# Selección de herramientas
-tool_name = st.selectbox("Selecciona una herramienta LEAN 2.0", list(tools.keys()))
-
-# Descripción de la herramienta seleccionada
-st.subheader(f"Descripción de {tool_name}")
-st.write(tools[tool_name])
-
-# Información adicional para cada herramienta
-if tool_name == "Kaizen Colectivo":
-    st.markdown("""
+# Detalles extendidos para cada herramienta
+extended_info = { "Kaizen Colectivo":
     **¿Qué es?**  
     Kaizen Colectivo es una práctica que involucra a todos los miembros de una organización en el proceso de mejora continua. 
     Todos trabajan juntos para identificar áreas de mejora y proponer soluciones.
@@ -64,9 +56,9 @@ if tool_name == "Kaizen Colectivo":
 
     **¿Por qué Funciona?**
     - Aprovecha la experiencia colectiva para impulsar mejoras reales y sostenibles.
-    """)
+    """),
 
-elif tool_name == "Gemba con Propósito":
+ "Gemba con Propósito":
     st.markdown("""
     **¿Qué es?**  
     Gemba con Propósito implica que los líderes y empleados vayan al lugar de trabajo (el "gemba") para observar directamente los procesos y comprender mejor los problemas.
@@ -91,10 +83,9 @@ elif tool_name == "Gemba con Propósito":
 
     **¿Por qué Funciona?**
     - Facilita una comprensión directa de los problemas y permite soluciones más efectivas y rápidas.
-    """)
+    """),
 
-elif tool_name == "Kanban Ético":
-    st.markdown("""
+ "Kanban Ético":
     **¿Qué es?**  
     Sistema visual de gestión de tareas, que balancea la carga de trabajo para reducir estrés y aumentar el bienestar.
 
@@ -118,10 +109,9 @@ elif tool_name == "Kanban Ético":
 
     **¿Por qué Funciona?**
     - Facilita una comprensión directa de los problemas y permite soluciones más efectivas y rápidas.
-    """)
+    """),
 
-elif tool_name == "Mapeo de Causa-Humano":
-    st.markdown("""
+ "Mapeo de Causa-Humano":
     **¿Qué es?**  
     Herramienta para analizar problemas sistémicos considerando factores humanos y organizacionales.
 
@@ -144,9 +134,8 @@ elif tool_name == "Mapeo de Causa-Humano":
 
     **¿Por qué Funciona?**
     - El enfoque sistémico minimiza errores y promueve un ambiente de mejora continua sin culpabilidad.
-    """)
-elif tool_name == "Andon Humano 4.0":
-    st.markdown("""
+    """),
+ "Andon Humano 4.0":
     **¿Qué es?**  
     Sistema visual de alertas donde cualquier colaborador puede señalar problemas en tiempo real.
 
@@ -171,10 +160,9 @@ elif tool_name == "Andon Humano 4.0":
 
     **¿Por qué Funciona?**
     - Promueve intervención temprana, evitando escaladas de problemas operativos y humanos.
-    """)
+    """),
 
-elif tool_name == "Poka-Yoke Humano":
-    st.markdown("""
+ "Poka-Yoke Humano":
     **¿Qué es?**  
     Método para prevenir errores humanos antes de que ocurran mediante mejoras simples en procesos.
 
@@ -197,10 +185,9 @@ elif tool_name == "Poka-Yoke Humano":
 
     **¿Por qué Funciona?**
     - Elimina la posibilidad de fallas antes de que afecten al sistema o al colaborador.
-    """)
+    """),
 
-elif tool_name == "PDCA / PDSA Saludable":
-    st.markdown("""
+"PDCA / PDSA Saludable":
     **¿Qué es?**  
     Ciclo sistemático para planificar, ejecutar, verificar y actuar sobre mejoras continuas, enfocado en procesos humanos.
 
@@ -224,10 +211,9 @@ elif tool_name == "PDCA / PDSA Saludable":
 
     **¿Por qué Funciona?**
     - Fomenta experimentación segura y aprendizaje colectivo.
-    """)
+    """),
 
-elif tool_name == "Hoshin Kanri Humano":
-    st.markdown("""
+"Hoshin Kanri Humano":
     **¿Qué es?**  
     Sistema de despliegue estratégico enfocado en el alineamiento entre los objetivos de la organización y las necesidades humanas.
 
@@ -251,10 +237,9 @@ elif tool_name == "Hoshin Kanri Humano":
 
     **¿Por qué Funciona?**
     - Genera propósito compartido y compromiso genuino.
-    """)
+    """),
 
-elif tool_name == "5S+2 Centrado en las Personas":
-    st.markdown("""
+"5S+2 Centrado en las Personas":
     **¿Qué es?**  
     Expansión del método 5S tradicional, incluyendo componentes de bienestar y humanización del espacio de trabajo.
 
@@ -277,9 +262,8 @@ elif tool_name == "5S+2 Centrado en las Personas":
 
     **¿Por qué Funciona?**
     - Genera orden externo e interno, impactando positivamente en el estado mental.
-    """)
-elif tool_name == "Ethical FMEA":
-    st.markdown("""
+    """),
+"Ethical FMEA":
     **¿Qué es?**  
     Análisis de modos y efectos de falla aplicado con un enfoque humano, priorizando riesgos psicosociales y operativos.
 
@@ -302,10 +286,9 @@ elif tool_name == "Ethical FMEA":
 
     **¿Por qué Funciona?**
     - Integra la dimensión humana en la prevención de errores críticos.
-    """)
+    """),
 
-elif tool_name == "VSM de Equilibrio Laboral":
-    st.markdown("""
+"VSM de Equilibrio Laboral":
     **¿Qué es?**  
     Mapeo del flujo de valor que prioriza tanto la eficiencia operativa como el bienestar humano.
 
@@ -328,10 +311,9 @@ elif tool_name == "VSM de Equilibrio Laboral":
 
     **¿Por qué Funciona?**
     - El enfoque dual (operativo y humano) garantiza flujos sostenibles.
-    """)
+    """),
 
-elif tool_name == "Takt Time Laboral":
-    st.markdown("""
+"Takt Time Laboral":
     **¿Qué es?**  
     Medición del ritmo de trabajo ideal para satisfacer la demanda sin sobrecargar a los colaboradores.
 
@@ -354,10 +336,9 @@ elif tool_name == "Takt Time Laboral":
 
     **¿Por qué Funciona?**
     - Sincroniza productividad con bienestar humano de forma estructurada.
-    """)
+    """),
 
-elif tool_name == "Jidoka Ético":
-    st.markdown("""
+"Jidoka Ético":
     **¿Qué es?**  
     Sistema de autonomización que integra criterios éticos de protección al trabajador en la detección y corrección de errores.
 
@@ -380,10 +361,9 @@ elif tool_name == "Jidoka Ético":
 
     **¿Por qué Funciona?**
     - Combina calidad técnica con respeto por la dignidad laboral.
-    """)
+    """),
 
-elif tool_name == "Heijunka Humano":
-    st.markdown("""
+"Heijunka Humano":
     **¿Qué es?**  
     Herramienta para nivelar la carga de trabajo evitando picos de esfuerzo perjudiciales para la salud.
 
@@ -406,8 +386,17 @@ elif tool_name == "Heijunka Humano":
 
     **¿Por qué Funciona?**
     - Nivelar protege la energía y salud mental de los trabajadores.
-    """)
+    """,
+}
 
+# Mostrar tarjetas para cada herramienta
+for tool, description in tools.items():
+    with st.container():
+        st.markdown(f"### {tool}")
+        st.markdown(f"> {description}")
+        if tool in extended_info:
+            st.markdown(extended_info[tool])
+        st.markdown("---")
 
 
 
