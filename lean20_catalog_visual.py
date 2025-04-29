@@ -369,34 +369,40 @@ tools = { "Kaizen Colectivo": """
 }
 
 # Colores para las tarjetas
-colors = ["#f9f9f9", "#e0f7fa", "#fce4ec"]
+colors = ["#f9f9f9", "#e0f7fa", "#fce4ec", "#fff3e0", "#e8f5e9"]
 
-# Selector de herramienta
-selected_tool = st.selectbox("Selecciona una herramienta:", list(tools.keys()))
+# Configuración de columnas (por ejemplo, 3 columnas)
+cols_per_row = 3
+columns = st.columns(cols_per_row)
 
-# Mostrar la herramienta seleccionada en una "tarjeta"
-index = list(tools.keys()).index(selected_tool)
-color = colors[index % len(colors)]
-
-# Mostrar contenido con estilo tarjeta
-st.markdown(
-    f"""
-    <div style="
-        background-color: {color};
-        padding: 1.5rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-top: 1rem;
-    ">
-        <h3 style="color: #333;">{selected_tool}</h3>
-        <div style="color: #555; font-size: 1rem;">
-            {format_bold(tools[selected_tool])}
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
+# Mostrar herramientas en forma de grid
+for idx, (tool_name, tool_description) in enumerate(tools.items()):
+    col = columns[idx % cols_per_row]
+    with col:
+        st.markdown(
+            f"""
+            <div style="
+                background-color: {colors[idx % len(colors)]};
+                padding: 1rem;
+                border-radius: 0.75rem;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+                margin-bottom: 1rem;
+                text-align: center;
+            ">
+                <h4 style="margin: 0; color: #333;">{tool_name}</h4>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        with st.expander("Ver detalles"):
+            st.markdown(
+                f"""
+                <div style="color: #555; font-size: 1rem;">
+                    {format_bold(tool_description)}
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
 
 
