@@ -1,6 +1,13 @@
+try:
+    import plotly.express as px
+except ImportError:
+    import subprocess
+    import sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
+    import plotly.express as px
+
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
 from io import BytesIO
 import smtplib
@@ -8,7 +15,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import pdfkit
 from datetime import datetime
-
 # ================
 # PAGE CONFIGURATION
 # ================
