@@ -52,7 +52,7 @@ def format_bold(text):
 # --- Tools ---
 tools = {
     "Kaizen Colectivo": {
-    "icon": "🚀",
+    "icon": "🤝",
     "description": """
     **¿Qué es?**  
     Kaizen Colectivo es una práctica que involucra a todos los miembros de una organización en el proceso de mejora continua. 
@@ -82,7 +82,7 @@ tools = {
     """,   },
 
    "Gemba con Propósito":{
-    "icon": "🚀",
+    "icon": "👣",
     "description": """
     **¿Qué es?**  
     Gemba con Propósito implica que los líderes y empleados vayan al lugar de trabajo (el "gemba") para observar directamente los procesos y comprender mejor los problemas.
@@ -110,7 +110,7 @@ tools = {
     """,  },
 
  "Kanban Ético":{
-    "icon": "🚀",
+    "icon": "📋",
     "description": """
     **¿Qué es?**  
     Sistema visual de gestión de tareas, que balancea la carga de trabajo para reducir estrés y aumentar el bienestar.
@@ -138,7 +138,7 @@ tools = {
     """,  },
 
  "Mapeo de Causa-Humano":{
-    "icon": "🚀",
+    "icon": "🧠",
     "description": """
     **¿Qué es?**  
     Herramienta para analizar problemas sistémicos considerando factores humanos y organizacionales.
@@ -164,7 +164,7 @@ tools = {
     - El enfoque sistémico minimiza errores y promueve un ambiente de mejora continua sin culpabilidad.
     """,  },
  "Andon Humano 4.0":{
-    "icon": "🚀",
+    "icon": "🚨",
     "description": """
     **¿Qué es?**  
     Sistema visual de alertas donde cualquier colaborador puede señalar problemas en tiempo real.
@@ -193,7 +193,7 @@ tools = {
     """,  },
 
  "Poka-Yoke Humano":{
-    "icon": "🚀",
+    "icon": "🛡️",
     "description": """
     **¿Qué es?**  
     Método para prevenir errores humanos antes de que ocurran mediante mejoras simples en procesos.
@@ -220,7 +220,7 @@ tools = {
     """,  },
 
 "PDCA / PDSA Saludable":{
-    "icon": "🚀",
+    "icon": "♻️",
     "description": """
     **¿Qué es?**  
     Ciclo sistemático para planificar, ejecutar, verificar y actuar sobre mejoras continuas, enfocado en procesos humanos.
@@ -248,7 +248,7 @@ tools = {
     """,  },
 
 "Hoshin Kanri Humano":{
-    "icon": "🚀",
+    "icon": "🎯",
     "description": """
     **¿Qué es?**  
     Sistema de despliegue estratégico enfocado en el alineamiento entre los objetivos de la organización y las necesidades humanas.
@@ -276,7 +276,7 @@ tools = {
     """,  },
 
 "5S+2 Centrado en las Personas": {
-    "icon": "🚀",
+    "icon": "🧽",
     "description": """
     **¿Qué es?**  
     Expansión del método 5S tradicional, incluyendo componentes de bienestar y humanización del espacio de trabajo.
@@ -302,7 +302,7 @@ tools = {
     - Genera orden externo e interno, impactando positivamente en el estado mental.
     """,  },
 "Ethical FMEA":{
-    "icon": "🚀",
+    "icon": "⚖️",
     "description": """
     **¿Qué es?**  
     Análisis de modos y efectos de falla aplicado con un enfoque humano, priorizando riesgos psicosociales y operativos.
@@ -329,7 +329,7 @@ tools = {
     """,  },
 
 "VSM de Equilibrio Laboral": {
-    "icon": "🚀",
+    "icon": "🗺️",
     "description": """
     **¿Qué es?**  
     Mapeo del flujo de valor que prioriza tanto la eficiencia operativa como el bienestar humano.
@@ -356,7 +356,7 @@ tools = {
     """,  },
 
 "Takt Time Laboral": {
-    "icon": "🚀",
+    "icon": "⏱️",
     "description": """
     **¿Qué es?**  
     Medición del ritmo de trabajo ideal para satisfacer la demanda sin sobrecargar a los colaboradores.
@@ -383,7 +383,7 @@ tools = {
     """,  },
 
 "Jidoka Ético":{
-    "icon": "🚀",
+    "icon": "🧩",
     "description": """
     **¿Qué es?**  
     Sistema de autonomización que integra criterios éticos de protección al trabajador en la detección y corrección de errores.
@@ -410,7 +410,7 @@ tools = {
     """,  },
 
 "Heijunka Humano": {
-    "icon": "🚀",
+    "icon": "⚙️",
     "description": """
     **¿Qué es?**  
     Herramienta para nivelar la carga de trabajo evitando picos de esfuerzo perjudiciales para la salud.
@@ -437,7 +437,7 @@ tools = {
     """,  },
 
 "Standard of Work Humano": {
-    "icon": "🚀",
+    "icon": "📘",
     "description": """
     **¿Qué es?**
     - Define la mejor forma de trabajar priorizando la dignidad, la salud mental y el bienestar, no solo la eficiencia.
