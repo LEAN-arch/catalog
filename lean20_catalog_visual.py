@@ -371,7 +371,7 @@ tools = { "Kaizen Colectivo": """
 # Colores para las tarjetas
 colors = ["#f9f9f9", "#e0f7fa", "#fce4ec", "#fff3e0", "#e8f5e9"]
 
-# Configuración de columnas (por ejemplo, 3 columnas)
+# Configuración de columnas (por ejemplo, 4 columnas)
 cols_per_row = 3
 columns = st.columns(cols_per_row)
 
