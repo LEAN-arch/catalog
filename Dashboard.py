@@ -1,41 +1,66 @@
 import sys
-import platform
+import warnings
 
-# Check and install missing packages with better error handling
-required_packages = {
-    'streamlit': 'st',
-    'pandas': 'pd',
-    'plotly': 'px',
-    'plotly.graph_objects': 'go',
-    'pdfkit': 'pdfkit'
-}
+# Suppress unnecessary warnings
+warnings.filterwarnings("ignore")
 
-missing_packages = []
-for package, alias in required_packages.items():
+def install_package(package):
+    """Helper function to install packages with multiple fallback methods"""
+    import subprocess
+    import importlib
+    
+    # Try pip first
     try:
-        globals()[alias] = __import__(package)
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+        return True
+    except:
+        pass
+    
+    # Try pip with --user flag
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "--user", package])
+        return True
+    except:
+        pass
+    
+    # Try easy_install as last resort
+    try:
+        subprocess.check_call([sys.executable, "-m", "easy_install", package])
+        return True
+    except:
+        return False
+
+# List of required packages
+REQUIRED_PACKAGES = [
+    'streamlit',
+    'pandas',
+    'plotly',
+    'pdfkit',
+    'wkhtmltopdf'  # Required for pdfkit
+]
+
+# Check and install missing packages
+missing_packages = []
+for package in REQUIRED_PACKAGES:
+    try:
+        __import__(package)
     except ImportError:
         missing_packages.append(package)
 
 if missing_packages:
-    import pip._internal as pip
-    try:
-        for package in missing_packages:
-            try:
-                pip.main(['install', package])
-            except:
-                # Fallback to subprocess if pip._internal fails
-                import subprocess
-                subprocess.run([sys.executable, '-m', 'pip', 'install', package], check=True)
-        
-        # Reload modules after installation
-        for package, alias in required_packages.items():
-            if package in missing_packages:
-                globals()[alias] = __import__(package)
-    except Exception as e:
-        raise ImportError(f"Failed to install required packages: {missing_packages}\nError: {str(e)}")
+    st.warning(f"Installing missing packages: {', '.join(missing_packages)}...")
+    for package in missing_packages:
+        if not install_package(package):
+            st.error(f"Failed to install {package}. Please install manually with: pip install {package}")
+            if package == 'pdfkit':
+                st.info("For pdfkit, you may also need to install wkhtmltopdf. See: https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf")
+            sys.exit(1)
+    
+    # Refresh imports after installation
+    for package in missing_packages:
+        globals()[package] = __import__(package)
 
-# Now proceed with your imports
+# Now safely import all packages
 import streamlit as st
 import pandas as pd
 import plotly.express as px
