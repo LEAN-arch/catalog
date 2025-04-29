@@ -33,8 +33,7 @@ tools = { "Kaizen Colectivo": """
     - Aprovecha la experiencia colectiva para impulsar mejoras reales y sostenibles.
     """),
 
- "Gemba con Propósito": """
-    st.markdown("""
+   "Gemba con Propósito": """
     **¿Qué es?**  
     Gemba con Propósito implica que los líderes y empleados vayan al lugar de trabajo (el "gemba") para observar directamente los procesos y comprender mejor los problemas.
 
