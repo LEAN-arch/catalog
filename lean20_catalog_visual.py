@@ -1,15 +1,55 @@
 import streamlit as st
 import re
-st.set_page_config(page_title="Catálogo Lean 2.0", layout="wide")
 
-st.title("🚀 Catálogo de Herramientas Lean 2.0")
-# Función para convertir **texto** a <b>texto</b>
+# --- Page config ---
+st.set_page_config(page_title="Catálogo Lean 2.0", layout="wide")
+st.markdown(
+    """
+    <style>
+    .card {
+        background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+        border-radius: 1.25rem;
+        padding: 1.5rem;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+    .card-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #2196f3;
+    }
+    .card-title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    .card-content {
+        color: #555;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# --- Helper function ---
 def format_bold(text):
     text = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', text)
     text = text.replace('\n', '<br>')
     return text
-
 # Definimos las herramientas como texto plano (sin st.markdown adentro)
+# --- Tools ---
 tools = { "Kaizen Colectivo": """
     **¿Qué es?**  
     Kaizen Colectivo es una práctica que involucra a todos los miembros de una organización en el proceso de mejora continua. 
@@ -404,40 +444,28 @@ tools = { "Kaizen Colectivo": """
     """,      
 }
 
-# --- Color palette for cards ---
-colors = ["#F0F4F8", "#E0F7FA", "#FFF3E0", "#FCE4EC", "#E8F5E9"]
-
-# --- Layout configuration ---
+# --- Layout ---
 cols_per_row = 3
 columns = st.columns(cols_per_row)
 
-# --- Render cards dynamically ---
-for idx, (tool_name, tool_description) in enumerate(tools.items()):
+for idx, (tool_name, tool_data) in enumerate(tools.items()):
     col = columns[idx % cols_per_row]
     with col:
-        st.markdown(
-            f"""
-            <div style="
-                background: linear-gradient(135deg, {colors[idx % len(colors)]} 0%, #ffffff 100%);
-                padding: 1.5rem;
-                border-radius: 1rem;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                margin-bottom: 1.5rem;
-                text-align: center;
-                transition: transform 0.2s;
-            " onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';">
-                <h3 style="color: #222; margin-bottom: 0.5rem;">{tool_name}</h3>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        with st.expander("🔍 Ver detalles", expanded=False):
+        with st.container():
             st.markdown(
                 f"""
-                <div style="color: #444; font-size: 1rem; line-height: 1.6;">
-                    {format_bold(tool_description)}
+                <div class="card">
+                    <div class="card-icon">{tool_data['icon']}</div>
+                    <div class="card-title">{tool_name}</div>
+                    <div class="card-content">
+                        <details>
+                            <summary style="cursor: pointer; font-weight: bold; color: #1976d2;">Ver detalles</summary>
+                            <div style="margin-top: 0.75rem; text-align: left;">
+                                {format_bold(tool_data['description'])}
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 """,
                 unsafe_allow_html=True
             )
-
