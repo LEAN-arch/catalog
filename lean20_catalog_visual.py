@@ -360,7 +360,7 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Nivelar protege la energía y salud mental de los trabajadores.
-    """,
+    """),
 }
 
 # Colores para las tarjetas
