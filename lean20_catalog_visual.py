@@ -50,8 +50,10 @@ def format_bold(text):
     return text
 # Definimos las herramientas como texto plano (sin st.markdown adentro)
 # --- Tools ---
-tools = { "Kaizen Colectivo": """
+tools = {
+    "Kaizen Colectivo": {
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Kaizen Colectivo es una práctica que involucra a todos los miembros de una organización en el proceso de mejora continua. 
     Todos trabajan juntos para identificar áreas de mejora y proponer soluciones.
@@ -77,10 +79,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Aprovecha la experiencia colectiva para impulsar mejoras reales y sostenibles.
-    """,
+    """,   },
 
-   "Gemba con Propósito": """
+   "Gemba con Propósito":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Gemba con Propósito implica que los líderes y empleados vayan al lugar de trabajo (el "gemba") para observar directamente los procesos y comprender mejor los problemas.
 
@@ -104,10 +107,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Facilita una comprensión directa de los problemas y permite soluciones más efectivas y rápidas.
-    """,
+    """,  },
 
- "Kanban Ético": """
+ "Kanban Ético":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Sistema visual de gestión de tareas, que balancea la carga de trabajo para reducir estrés y aumentar el bienestar.
 
@@ -131,10 +135,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Facilita una comprensión directa de los problemas y permite soluciones más efectivas y rápidas.
-    """,
+    """,  },
 
- "Mapeo de Causa-Humano": """
+ "Mapeo de Causa-Humano":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Herramienta para analizar problemas sistémicos considerando factores humanos y organizacionales.
 
@@ -157,9 +162,10 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - El enfoque sistémico minimiza errores y promueve un ambiente de mejora continua sin culpabilidad.
-    """,
- "Andon Humano 4.0": """
+    """,  },
+ "Andon Humano 4.0":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Sistema visual de alertas donde cualquier colaborador puede señalar problemas en tiempo real.
 
@@ -184,10 +190,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Promueve intervención temprana, evitando escaladas de problemas operativos y humanos.
-    """,
+    """,  },
 
- "Poka-Yoke Humano": """
+ "Poka-Yoke Humano":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Método para prevenir errores humanos antes de que ocurran mediante mejoras simples en procesos.
 
@@ -210,10 +217,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Elimina la posibilidad de fallas antes de que afecten al sistema o al colaborador.
-    """,
+    """,  },
 
-"PDCA / PDSA Saludable": """
+"PDCA / PDSA Saludable":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Ciclo sistemático para planificar, ejecutar, verificar y actuar sobre mejoras continuas, enfocado en procesos humanos.
 
@@ -237,10 +245,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Fomenta experimentación segura y aprendizaje colectivo.
-    """,
+    """,  },
 
-"Hoshin Kanri Humano": """
+"Hoshin Kanri Humano":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Sistema de despliegue estratégico enfocado en el alineamiento entre los objetivos de la organización y las necesidades humanas.
 
@@ -264,10 +273,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Genera propósito compartido y compromiso genuino.
-    """,
+    """,  },
 
-"5S+2 Centrado en las Personas": """
+"5S+2 Centrado en las Personas": {
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Expansión del método 5S tradicional, incluyendo componentes de bienestar y humanización del espacio de trabajo.
 
@@ -290,9 +300,10 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Genera orden externo e interno, impactando positivamente en el estado mental.
-    """,
-"Ethical FMEA": """
+    """,  },
+"Ethical FMEA":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Análisis de modos y efectos de falla aplicado con un enfoque humano, priorizando riesgos psicosociales y operativos.
 
@@ -315,10 +326,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Integra la dimensión humana en la prevención de errores críticos.
-    """,
+    """,  },
 
-"VSM de Equilibrio Laboral": """
+"VSM de Equilibrio Laboral": {
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Mapeo del flujo de valor que prioriza tanto la eficiencia operativa como el bienestar humano.
 
@@ -341,10 +353,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - El enfoque dual (operativo y humano) garantiza flujos sostenibles.
-    """,
+    """,  },
 
-"Takt Time Laboral": """
+"Takt Time Laboral": {
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Medición del ritmo de trabajo ideal para satisfacer la demanda sin sobrecargar a los colaboradores.
 
@@ -367,10 +380,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Sincroniza productividad con bienestar humano de forma estructurada.
-    """,
+    """,  },
 
-"Jidoka Ético": """
+"Jidoka Ético":{
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Sistema de autonomización que integra criterios éticos de protección al trabajador en la detección y corrección de errores.
 
@@ -393,10 +407,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Combina calidad técnica con respeto por la dignidad laboral.
-    """,
+    """,  },
 
-"Heijunka Humano": """
+"Heijunka Humano": {
     "icon": "🚀",
+    "description": """
     **¿Qué es?**  
     Herramienta para nivelar la carga de trabajo evitando picos de esfuerzo perjudiciales para la salud.
 
@@ -419,10 +434,11 @@ tools = { "Kaizen Colectivo": """
 
     **¿Por qué Funciona?**
     - Nivelar protege la energía y salud mental de los trabajadores.
-    """,
+    """,  },
 
-"Standard of Work Humano": """
+"Standard of Work Humano": {
     "icon": "🚀",
+    "description": """
     **¿Qué es?**
     - Define la mejor forma de trabajar priorizando la dignidad, la salud mental y el bienestar, no solo la eficiencia.
 
@@ -456,7 +472,7 @@ tools = { "Kaizen Colectivo": """
 
   **¿Por qué Funciona?**
   - Porque trabajadores saludables y respetados son más productivos, comprometidos y generan mejores resultados sostenibles.
-    """,      
+    """,        },
 }
 
 # --- Layout ---
