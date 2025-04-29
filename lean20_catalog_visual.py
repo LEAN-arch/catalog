@@ -42,6 +42,9 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+# --- Page title ---
+st.markdown('<div class="page-title">🚀 Catálogo Lean 2.0</div>', unsafe_allow_html=True)
+
 
 # --- Helper function ---
 def format_bold(text):
