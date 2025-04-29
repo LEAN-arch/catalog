@@ -1,13 +1,19 @@
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-from io import BytesIO
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import pdfkit
-from datetime import datetime
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+    import plotly.graph_objects as go
+    from io import BytesIO
+    import smtplib
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
+    import pdfkit
+    from datetime import datetime
+except ImportError as e:
+    import subprocess
+    import sys
+    st.error(f"Missing required package: {e.name}. Installing now...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", e.name])
+    st.experimental_rerun()
 
 # ================
 # PAGE CONFIGURATION
@@ -17,7 +23,6 @@ st.set_page_config(
     layout="wide",
     page_icon="📊"
 )
-
 # ================
 # CUSTOM CSS
 # ================
