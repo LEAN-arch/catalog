@@ -53,7 +53,7 @@ st.markdown(
 )
 # --- Page title ---
 st.markdown('<div class="page-title">🚀 Catálogo de Herramientas Lean 2.0</div>', unsafe_allow_html=True)
-st.image("assets/FOBO2.png", width=200)
+st.image("assets/FOBO2.png", width=150)
 
 # --- Helper function ---
 def format_bold(text):
