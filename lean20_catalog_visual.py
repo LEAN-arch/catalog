@@ -486,36 +486,6 @@ tools = {
   - Porque trabajadores saludables y respetados son más productivos, comprometidos y generan mejores resultados sostenibles.
     """,        },
 
-"Sensores de Bienestar (Wearables & Biofeedback Ético)": {
-  "icon": "📶",
-  "description": """
-  **¿Qué es?**  
-  - Dispositivos y tecnologías que monitorean signos vitales, estrés y bienestar en tiempo real, respetando la privacidad.
-
-  **Beneficios Clave (Operativos y Humanos):**
-  - Detección temprana de fatiga o estrés.
-  - Mejora del clima laboral.
-  - Prevención de riesgos psicosociales.
-
-  **Aporte a NOM-035:**
-  - Apoya la evaluación y control de factores de riesgo psicosocial.
-
-  **Cómo Implementarlo:**
-  - Integrar sensores o wearables en áreas críticas.
-  - Garantizar consentimiento informado y protección de datos.
-
-  **Indicadores de Éxito:**
-  - Disminución de episodios de estrés laboral.
-  - Aumento en la satisfacción laboral.
-
-  **Métricas o KPIs Específicos:**
-  - Niveles promedio de variabilidad cardíaca (HRV).
-  - Tasa de participación voluntaria.
-
-  **¿Por qué Funciona?**
-  - Proporciona datos objetivos para intervenir a tiempo y de forma ética.
-    """,        },
-
 "Matriz de Riesgos Psicosociales": {
   "icon": "🧩",
   "description": """
@@ -811,6 +781,36 @@ tools = {
 
   **¿Por qué Funciona?**
   - Porque la claridad operativa reduce el estrés, mejora la calidad y empodera al trabajador. Los estándares bien diseñados son herramientas de apoyo humano y técnico para lograr excelencia sostenible.
+    """,        },
+
+"Sensores de Bienestar (Wearables & Biofeedback Ético)": {
+  "icon": "📶",
+  "description": """
+  **¿Qué es?**  
+  - Dispositivos y tecnologías que monitorean signos vitales, estrés y bienestar en tiempo real, respetando la privacidad.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Detección temprana de fatiga o estrés.
+  - Mejora del clima laboral.
+  - Prevención de riesgos psicosociales.
+
+  **Aporte a NOM-035:**
+  - Apoya la evaluación y control de factores de riesgo psicosocial.
+
+  **Cómo Implementarlo:**
+  - Integrar sensores o wearables en áreas críticas.
+  - Garantizar consentimiento informado y protección de datos.
+
+  **Indicadores de Éxito:**
+  - Disminución de episodios de estrés laboral.
+  - Aumento en la satisfacción laboral.
+
+  **Métricas o KPIs Específicos:**
+  - Niveles promedio de variabilidad cardíaca (HRV).
+  - Tasa de participación voluntaria.
+
+  **¿Por qué Funciona?**
+  - Proporciona datos objetivos para intervenir a tiempo y de forma ética.
     """,        },
 
 }
