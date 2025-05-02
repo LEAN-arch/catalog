@@ -486,11 +486,11 @@ tools = {
   - Porque trabajadores saludables y respetados son más productivos, comprometidos y generan mejores resultados sostenibles.
     """,        },
 
-    "Sensores de Bienestar (Wearables & Biofeedback Ético)": {
+"Sensores de Bienestar (Wearables & Biofeedback Ético)": {
   "icon": "📶",
   "description": """
   **¿Qué es?**  
-  Dispositivos y tecnologías que monitorean signos vitales, estrés y bienestar en tiempo real, respetando la privacidad.
+  - Dispositivos y tecnologías que monitorean signos vitales, estrés y bienestar en tiempo real, respetando la privacidad.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Detección temprana de fatiga o estrés.
@@ -520,7 +520,7 @@ tools = {
   "icon": "🧩",
   "description": """
   **¿Qué es?**  
-  Herramienta para identificar, evaluar y priorizar riesgos psicosociales en el entorno laboral.
+  - Herramienta para identificar, evaluar y priorizar riesgos psicosociales en el entorno laboral.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Prevención de enfermedades laborales.
@@ -548,7 +548,7 @@ tools = {
   "icon": "🪞",
   "description": """
   **¿Qué es?**  
-  Práctica reflexiva y ética para revisar errores, aprender de ellos y restaurar relaciones afectadas.
+  - Práctica reflexiva y ética para revisar errores, aprender de ellos y restaurar relaciones afectadas.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Fortalece la confianza.
@@ -575,7 +575,7 @@ tools = {
   "icon": "🤝",
   "description": """
   **¿Qué es?**  
-  Flexibilidad inteligente en la asignación de personas, respetando capacidades, intereses y límites humanos.
+  - Flexibilidad inteligente en la asignación de personas, respetando capacidades, intereses y límites humanos.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Mayor adaptabilidad y eficiencia.
@@ -601,7 +601,7 @@ tools = {
   "icon": "🔎",
   "description": """
   **¿Qué es?**  
-  Claridad y trazabilidad en las órdenes de trabajo, con comunicación directa, abierta y sin ambigüedad.
+  - Claridad y trazabilidad en las órdenes de trabajo, con comunicación directa, abierta y sin ambigüedad.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Reduce errores y frustración.
@@ -627,7 +627,7 @@ tools = {
   "icon": "📊",
   "description": """
   **¿Qué es?**  
-  Visualización de la carga emocional, cognitiva y organizacional de cada trabajador, más allá del trabajo físico.
+  - Visualización de la carga emocional, cognitiva y organizacional de cada trabajador, más allá del trabajo físico.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Distribución más justa de tareas.
@@ -653,7 +653,7 @@ tools = {
   "icon": "🛠️",
   "description": """
   **¿Qué es?**  
-  Mantenimiento autónomo enfocado no solo en máquinas, sino en la salud y bienestar del operador.
+  - Mantenimiento autónomo enfocado no solo en máquinas, sino en la salud y bienestar del operador.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Menor ausentismo por fatiga física y mental.
@@ -679,7 +679,7 @@ tools = {
   "icon": "🚧",
   "description": """
   **¿Qué es?**  
-  Eliminación proactiva de sobrecarga mental, emocional o física en el entorno laboral.
+  - Eliminación proactiva de sobrecarga mental, emocional o física en el entorno laboral.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Reducción de enfermedades laborales.
@@ -705,7 +705,7 @@ tools = {
   "icon": "🌊",
   "description": """
   **¿Qué es?**  
-  Identificación y estabilización de fluctuaciones emocionales que afectan el desempeño y la armonía.
+  - Identificación y estabilización de fluctuaciones emocionales que afectan el desempeño y la armonía.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Mejora del clima laboral.
@@ -731,7 +731,7 @@ tools = {
   "icon": "♻️",
   "description": """
   **¿Qué es?**  
-  Identificación de desperdicios operativos que impactan el bienestar humano, como reuniones innecesarias, estrés evitable o tareas sin propósito.
+  - Identificación de desperdicios operativos que impactan el bienestar humano, como reuniones innecesarias, estrés evitable o tareas sin propósito.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Aumento del valor real en las actividades.
@@ -757,7 +757,7 @@ tools = {
   "icon": "🌱",
   "description": """
   **¿Qué es?**  
-  Práctica de consenso colaborativo con escucha activa, inclusión y equidad para la toma de decisiones.
+  - Práctica de consenso colaborativo con escucha activa, inclusión y equidad para la toma de decisiones.
 
   **Beneficios Clave (Operativos y Humanos):**
   - Mejora la implementación de cambios.
