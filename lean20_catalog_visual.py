@@ -232,7 +232,7 @@ tools = {
     """,  },
 
 "PDCA / PDSA Sostenible":{
-    "icon": "♻️",
+    "icon": "🔄",
     "description": """
     **¿Qué es?**  
     Ciclo sistemático para planificar, ejecutar, verificar y actuar sobre mejoras continuas, enfocado en procesos humanos.
@@ -395,7 +395,7 @@ tools = {
     """,  },
 
 "Jidoka Ético":{
-    "icon": "🧩",
+    "icon": "🛑",
     "description": """
     **¿Qué es?**  
     Sistema de autonomización que integra criterios éticos de protección al trabajador en la detección y corrección de errores.
@@ -572,7 +572,7 @@ tools = {
     """,        },
 
 "Shojinka Ético": {
-  "icon": "🤝",
+  "icon": "👥",
   "description": """
   **¿Qué es?**  
   - Flexibilidad inteligente en la asignación de personas, respetando capacidades, intereses y límites humanos.
@@ -778,6 +778,41 @@ tools = {
   **¿Por qué Funciona?**
   - Involucra a las personas desde el inicio, generando compromiso genuino.
     """,        },
+
+    "Checklists / Estándares de Trabajo": {
+  "icon": "☑️",
+  "description": """
+  **¿Qué es?**  
+  Los Checklists o Estándares de Trabajo son guías estructuradas que documentan la mejor forma conocida de realizar una tarea. Aseguran consistencia, calidad y seguridad, incorporando buenas prácticas operativas y humanas.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Reducción de errores y omisiones.
+  - Asegura cumplimiento regulatorio y buenas prácticas.
+  - Genera tranquilidad y confianza en el trabajador al tener claridad en lo esperado.
+
+  **Aporte a NOM-035:**
+  - Disminuye ambigüedad laboral, reduciendo el estrés y la carga mental.
+  - Favorece un ambiente predecible y seguro, donde los roles y responsabilidades están claramente definidos.
+
+  **Cómo Implementarlo:**
+  - Estandariza tareas clave con participación de quienes las ejecutan.
+  - Diseña checklists claros, accesibles y actualizables.
+  - Capacita a los equipos y promueve su uso como herramienta de apoyo, no de control punitivo.
+
+  **Indicadores de Éxito:**
+  - Reducción de errores repetitivos.
+  - Aumento en el cumplimiento de procesos críticos.
+  - Mejora en la percepción de claridad y seguridad laboral.
+
+  **Métricas o KPIs Específicos:**
+  - % de tareas ejecutadas conforme al estándar.
+  - % de reducción de incidencias relacionadas con omisiones o pasos mal realizados.
+  - Resultados de encuestas sobre claridad de instrucciones y percepción de carga mental.
+
+  **¿Por qué Funciona?**
+  - Porque la claridad operativa reduce el estrés, mejora la calidad y empodera al trabajador. Los estándares bien diseñados son herramientas de apoyo humano y técnico para lograr excelencia sostenible.
+    """,        },
+
 }
 
 # --- Layout ---
