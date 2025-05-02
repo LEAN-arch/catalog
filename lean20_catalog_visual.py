@@ -149,7 +149,7 @@ tools = {
     - Facilita una comprensión directa de los problemas y permite soluciones más efectivas y rápidas.
     """,  },
 
- "Mapeo de Causa-Humano":{
+ "Mapeo de Causa-Laboral":{
     "icon": "🧠",
     "description": """
     **¿Qué es?**  
@@ -204,7 +204,7 @@ tools = {
     - Promueve intervención temprana, evitando escaladas de problemas operativos y humanos.
     """,  },
 
- "Poka-Yoke Humano":{
+ "Poka-Yoke Inclusivo":{
     "icon": "🛡️",
     "description": """
     **¿Qué es?**  
@@ -231,7 +231,7 @@ tools = {
     - Elimina la posibilidad de fallas antes de que afecten al sistema o al colaborador.
     """,  },
 
-"PDCA / PDSA Saludable":{
+"PDCA / PDSA Sostenible":{
     "icon": "♻️",
     "description": """
     **¿Qué es?**  
@@ -259,7 +259,7 @@ tools = {
     - Fomenta experimentación segura y aprendizaje colectivo.
     """,  },
 
-"Hoshin Kanri Humano":{
+"Hoshin Kanri Humanista":{
     "icon": "🎯",
     "description": """
     **¿Qué es?**  
@@ -313,7 +313,7 @@ tools = {
     **¿Por qué Funciona?**
     - Genera orden externo e interno, impactando positivamente en el estado mental.
     """,  },
-"Ethical FMEA":{
+"Ethical FMEA:Análisis Modal de Fallos Ético":{
     "icon": "⚖️",
     "description": """
     **¿Qué es?**  
@@ -452,7 +452,7 @@ tools = {
     "icon": "📘",
     "description": """
     **¿Qué es?**
-    - Define la mejor forma de trabajar priorizando la dignidad, la salud mental y el bienestar, no solo la eficiencia.
+    - Define la mejor forma de trabajar priorizando la dignidad, la salud mental y el bienestar, no solo la eficiencia; dando claridad y equidad en la ejecución de labores.
 
     **Beneficios Clave:**
     - Consistencia en calidad sin desgaste humano.
@@ -484,6 +484,299 @@ tools = {
 
   **¿Por qué Funciona?**
   - Porque trabajadores saludables y respetados son más productivos, comprometidos y generan mejores resultados sostenibles.
+    """,        },
+
+    "Sensores de Bienestar (Wearables & Biofeedback Ético)": {
+  "icon": "📶",
+  "description": """
+  **¿Qué es?**  
+  Dispositivos y tecnologías que monitorean signos vitales, estrés y bienestar en tiempo real, respetando la privacidad.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Detección temprana de fatiga o estrés.
+  - Mejora del clima laboral.
+  - Prevención de riesgos psicosociales.
+
+  **Aporte a NOM-035:**
+  - Apoya la evaluación y control de factores de riesgo psicosocial.
+
+  **Cómo Implementarlo:**
+  - Integrar sensores o wearables en áreas críticas.
+  - Garantizar consentimiento informado y protección de datos.
+
+  **Indicadores de Éxito:**
+  - Disminución de episodios de estrés laboral.
+  - Aumento en la satisfacción laboral.
+
+  **Métricas o KPIs Específicos:**
+  - Niveles promedio de variabilidad cardíaca (HRV).
+  - Tasa de participación voluntaria.
+
+  **¿Por qué Funciona?**
+  - Proporciona datos objetivos para intervenir a tiempo y de forma ética.
+    """,        },
+
+"Matriz de Riesgos Psicosociales": {
+  "icon": "🧩",
+  "description": """
+  **¿Qué es?**  
+  Herramienta para identificar, evaluar y priorizar riesgos psicosociales en el entorno laboral.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Prevención de enfermedades laborales.
+  - Mejora de la salud mental.
+  - Cumplimiento normativo.
+
+  **Aporte a NOM-035:**
+  - Núcleo de cumplimiento de la norma.
+
+  **Cómo Implementarlo:**
+  - Aplicar cuestionarios validados y análisis multidimensional.
+
+  **Indicadores de Éxito:**
+  - Riesgos identificados por área.
+  - Planes de acción derivados.
+
+  **Métricas o KPIs Específicos:**
+  - Índice de exposición a riesgos psicosociales.
+
+  **¿Por qué Funciona?**
+  - Facilita decisiones estratégicas y preventivas.
+    """,        },
+
+"Hansei Restaurativo": {
+  "icon": "🪞",
+  "description": """
+  **¿Qué es?**  
+  Práctica reflexiva y ética para revisar errores, aprender de ellos y restaurar relaciones afectadas.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Fortalece la confianza.
+  - Reduce la repetición de errores.
+  - Promueve un ambiente respetuoso.
+
+  **Aporte a NOM-035:**
+  - Mejora la gestión de conflictos y resiliencia organizacional.
+
+  **Cómo Implementarlo:**
+  - Espacios de reflexión estructurada con enfoque restaurativo.
+
+  **Indicadores de Éxito:**
+  - Casos resueltos con aprendizaje documentado.
+
+  **Métricas o KPIs Específicos:**
+  - Tasa de reincidencia en errores o conflictos.
+
+  **¿Por qué Funciona?**
+  - Transforma el error en oportunidad y promueve la cultura del perdón.
+    """,        },
+
+"Shojinka Ético": {
+  "icon": "🤝",
+  "description": """
+  **¿Qué es?**  
+  Flexibilidad inteligente en la asignación de personas, respetando capacidades, intereses y límites humanos.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Mayor adaptabilidad y eficiencia.
+  - Reducción de carga excesiva y burnout.
+
+  **Aporte a NOM-035:**
+  - Alinea tareas a capacidades reales del personal.
+
+  **Cómo Implementarlo:**
+  - Diseño de rotaciones éticas y colaborativas.
+
+  **Indicadores de Éxito:**
+  - Reducción de rotación y ausentismo.
+
+  **Métricas o KPIs Específicos:**
+  - Índice de carga laboral equilibrada.
+
+  **¿Por qué Funciona?**
+  - Permite una operación humana, sostenible y justa.
+    """,        },
+
+"Shigoto Shiji Transparente": {
+  "icon": "🔎",
+  "description": """
+  **¿Qué es?**  
+  Claridad y trazabilidad en las órdenes de trabajo, con comunicación directa, abierta y sin ambigüedad.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Reduce errores y frustración.
+  - Mejora la coordinación y seguridad psicológica.
+
+  **Aporte a NOM-035:**
+  - Fortalece la certidumbre y disminuye tensiones laborales.
+
+  **Cómo Implementarlo:**
+  - Uso de sistemas digitales con retroalimentación clara.
+
+  **Indicadores de Éxito:**
+  - Disminución de reprocesos y ambigüedades en tareas.
+
+  **Métricas o KPIs Específicos:**
+  - Tasa de errores por malentendidos operativos.
+
+  **¿Por qué Funciona?**
+  - Fomenta la confianza y la eficiencia mediante la transparencia.
+    """,        },
+
+"Yamazumi Psicosocial": {
+  "icon": "📊",
+  "description": """
+  **¿Qué es?**  
+  Visualización de la carga emocional, cognitiva y organizacional de cada trabajador, más allá del trabajo físico.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Distribución más justa de tareas.
+  - Prevención de sobrecarga psicosocial.
+
+  **Aporte a NOM-035:**
+  - Evalúa cargas que afectan el bienestar.
+
+  **Cómo Implementarlo:**
+  - Mapas de carga total con datos auto-reportados y observación.
+
+  **Indicadores de Éxito:**
+  - Reducción de burnout y errores humanos.
+
+  **Métricas o KPIs Específicos:**
+  - Índice de sobrecarga emocional promedio por área.
+
+  **¿Por qué Funciona?**
+  - Hace visible lo invisible en la carga laboral humana.
+    """,        },
+
+"Jishu Hozen 2.0": {
+  "icon": "🛠️",
+  "description": """
+  **¿Qué es?**  
+  Mantenimiento autónomo enfocado no solo en máquinas, sino en la salud y bienestar del operador.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Menor ausentismo por fatiga física y mental.
+  - Incremento en el desempeño sostenible.
+
+  **Aporte a NOM-035:**
+  - Previene riesgos relacionados con ergonomía y salud.
+
+  **Cómo Implementarlo:**
+  - Programas integrados de mantenimiento y autocuidado.
+
+  **Indicadores de Éxito:**
+  - Disminución de paros por problemas de salud o ergonomía.
+
+  **Métricas o KPIs Específicos:**
+  - Frecuencia de pausas activas.
+
+  **¿Por qué Funciona?**
+  - Cuida tanto a la máquina como a la persona que la opera.
+    """,        },
+
+"Muri Preventivo": {
+  "icon": "🚧",
+  "description": """
+  **¿Qué es?**  
+  Eliminación proactiva de sobrecarga mental, emocional o física en el entorno laboral.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Reducción de enfermedades laborales.
+  - Mejora de la energía disponible para el trabajo.
+
+  **Aporte a NOM-035:**
+  - Mitiga factores de riesgo relacionados con el exceso de trabajo.
+
+  **Cómo Implementarlo:**
+  - Análisis de carga y rediseño de flujos laborales.
+
+  **Indicadores de Éxito:**
+  - Disminución de licencias médicas por estrés.
+
+  **Métricas o KPIs Específicos:**
+  - Horas extras promedio por trabajador.
+
+  **¿Por qué Funciona?**
+  - Interviene antes del daño, no después.
+    """,        },
+
+"Mura Emocional": {
+  "icon": "🌊",
+  "description": """
+  **¿Qué es?**  
+  Identificación y estabilización de fluctuaciones emocionales que afectan el desempeño y la armonía.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Mejora del clima laboral.
+  - Mayor resiliencia emocional colectiva.
+
+  **Aporte a NOM-035:**
+  - Reconoce y regula factores de riesgo derivados de la inestabilidad emocional.
+
+  **Cómo Implementarlo:**
+  - Programas de apoyo emocional y escucha activa.
+
+  **Indicadores de Éxito:**
+  - Estabilidad emocional autorreportada.
+
+  **Métricas o KPIs Específicos:**
+  - Fluctuación en escalas de bienestar emocional.
+
+  **¿Por qué Funciona?**
+  - Estabiliza la base emocional del trabajo en equipo.
+    """,        },
+
+"Muda Ético": {
+  "icon": "♻️",
+  "description": """
+  **¿Qué es?**  
+  Identificación de desperdicios operativos que impactan el bienestar humano, como reuniones innecesarias, estrés evitable o tareas sin propósito.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Aumento del valor real en las actividades.
+  - Reducción de desgaste innecesario.
+
+  **Aporte a NOM-035:**
+  - Minimiza factores psicosociales generadores de estrés.
+
+  **Cómo Implementarlo:**
+  - Mapas de valor con lente humano y ético.
+
+  **Indicadores de Éxito:**
+  - Reducción de actividades sin valor.
+
+  **Métricas o KPIs Específicos:**
+  - Horas eliminadas de tareas sin sentido.
+
+  **¿Por qué Funciona?**
+  - Mejora la calidad de vida laboral sin sacrificar resultados.
+    """,        },
+
+"Nemawashi Inclusivo": {
+  "icon": "🌱",
+  "description": """
+  **¿Qué es?**  
+  Práctica de consenso colaborativo con escucha activa, inclusión y equidad para la toma de decisiones.
+
+  **Beneficios Clave (Operativos y Humanos):**
+  - Mejora la implementación de cambios.
+  - Fortalece la cohesión organizacional.
+
+  **Aporte a NOM-035:**
+  - Reduce tensiones por decisiones unilaterales.
+
+  **Cómo Implementarlo:**
+  - Reuniones previas con enfoque inclusivo antes de implementar nuevas políticas.
+
+  **Indicadores de Éxito:**
+  - Nivel de aceptación en decisiones organizacionales.
+
+  **Métricas o KPIs Específicos:**
+  - Tasa de participación en procesos de cambio.
+
+  **¿Por qué Funciona?**
+  - Involucra a las personas desde el inicio, generando compromiso genuino.
     """,        },
 }
 
